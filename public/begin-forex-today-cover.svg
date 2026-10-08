@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Begin Forex Today</title>
+  <desc id="desc">A J-Trading beginner forex guide cover with a green and gold market chart.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#10231f"/>
+      <stop offset=".55" stop-color="#091411"/>
+      <stop offset="1" stop-color="#080b0a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#d6f27c"/>
+      <stop offset="1" stop-color="#91c944"/>
+    </linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#a8d65c" stroke-opacity=".12"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#background)"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+  <path d="M65 595 180 520l93 33 105-155 109 68 108-184 139-75" fill="none" stroke="url(#accent)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M65 595 180 520l93 33 105-155 109 68 108-184 139-75v388H65Z" fill="#a8d65c" fill-opacity=".08"/>
+  <g fill="#d6f27c">
+    <circle cx="180" cy="520" r="10"/>
+    <circle cx="378" cy="398" r="10"/>
+    <circle cx="596" cy="282" r="10"/>
+  </g>
+  <g fill="#d6f27c" font-family="monospace" font-size="21" opacity=".8">
+    <text x="88" y="177">LEARN THE MARKET / BUILD YOUR PLAN</text>
+    <text x="92" y="466">EUR/USD</text>
+    <text x="604" y="230">+12.8%</text>
+  </g>
+  <text x="76" y="112" fill="#d6f27c" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="9">J-TRADING</text>
+  <text x="76" y="712" fill="#f5f4ed" font-family="Arial, sans-serif" font-size="70" font-weight="700" letter-spacing="-3">BEGIN</text>
+  <text x="76" y="795" fill="url(#accent)" font-family="Arial, sans-serif" font-size="70" font-weight="700" letter-spacing="-3">FOREX</text>
+  <text x="76" y="878" fill="#f5f4ed" font-family="Arial, sans-serif" font-size="70" font-weight="700" letter-spacing="-3">TODAY.</text>
+  <text x="82" y="927" fill="#b4c2ae" font-family="Arial, sans-serif" font-size="18" letter-spacing="2">A STARTER GUIDE TO CURRENCY MARKETS</text>
+  <path d="M76 954h648" stroke="#a8d65c" stroke-opacity=".7"/>
+</svg>

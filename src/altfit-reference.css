@@ -1,0 +1,161 @@
+/* Final AltFit composition pass: the reference is compact, dense, and editorial. */
+.altfit-page .af-nav {
+  height: 58px;
+  padding-inline: clamp(18px, 4.8vw, 58px);
+}
+
+.altfit-page .af-home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border: 1px solid var(--af-line);
+  color: #f6f4ef;
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: border-color .2s ease, color .2s ease;
+}
+
+.altfit-page .af-home-button:hover {
+  border-color: var(--af-gold);
+  color: var(--af-gold);
+}
+
+.altfit-page .af-hero {
+  height: clamp(460px, 42vw, 690px);
+  min-height: 0;
+  max-height: none;
+}
+
+.altfit-page .af-hero-copy {
+  left: clamp(28px, 6vw, 76px);
+  bottom: 17%;
+}
+
+.altfit-page .af-hero h1 {
+  font-size: clamp(48px, 6vw, 92px);
+  line-height: .9;
+  margin: 17px 0 14px;
+}
+
+.altfit-page .af-hero-copy p {
+  font-size: clamp(14px, 1.3vw, 19px);
+  margin-bottom: 20px;
+}
+
+.altfit-page .af-hero-image::after {
+  background: linear-gradient(90deg, rgba(0,0,0,.84), rgba(0,0,0,.22) 60%, rgba(0,0,0,.1)), linear-gradient(0deg, rgba(0,0,0,.58), transparent 45%);
+}
+
+.altfit-page .af-section,
+.altfit-page .af-lookbook {
+  padding-block: clamp(48px, 5.5vw, 80px);
+}
+
+.altfit-page .af-intro {
+  grid-template-columns: .75fr 1.55fr;
+  gap: clamp(28px, 5vw, 70px);
+}
+
+.altfit-page .af-collection-card {
+  min-height: clamp(220px, 22vw, 320px);
+}
+
+.altfit-page .af-product-grid {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 9px;
+}
+
+.altfit-page .af-product-meta {
+  padding: 11px;
+}
+
+.altfit-page .af-product-meta h3 {
+  font-size: 11px;
+}
+
+.altfit-page .af-product-image {
+  aspect-ratio: 1 / 1.08;
+}
+
+.altfit-page .af-video-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.altfit-page .af-video-section {
+  display: grid;
+  grid-template-columns: .65fr 1.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.altfit-page .af-video-section .af-section-head {
+  display: block;
+  margin: 0;
+}
+
+.altfit-page .af-support {
+  min-height: 360px;
+  grid-template-columns: .8fr 1.2fr;
+}
+
+.altfit-page .af-support-copy {
+  padding-block: clamp(42px, 5vw, 70px);
+}
+
+.altfit-page .af-support-copy > p {
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+
+.altfit-page .af-pathways {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.altfit-page .af-pathways article {
+  min-height: 130px;
+  padding: 13px;
+}
+
+.altfit-page .af-pathways h3 {
+  font-size: 11px;
+  margin: 15px 0 7px;
+}
+
+.altfit-page .af-pathways p {
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .altfit-page .af-hero {
+    height: 680px;
+    min-height: 0;
+  }
+
+  .altfit-page .af-hero-copy {
+    bottom: 12%;
+  }
+
+  .altfit-page .af-models,
+  .altfit-page .af-lab {
+    display: block;
+  }
+
+  .altfit-page .af-video-section {
+    display: block;
+  }
+
+  .altfit-page .af-product-grid {
+    grid-template-columns: none;
+  }
+
+  .altfit-page .af-support {
+    min-height: 0;
+  }
+}

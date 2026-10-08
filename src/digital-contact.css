@@ -1,0 +1,112 @@
+.digital-grid {
+  align-items: start;
+}
+
+.ebook-shelf {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.ebook-product {
+  min-width: 0;
+  border: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.ebook-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.ebook-product-info {
+  padding: 16px;
+}
+
+.ebook-product-info h3 {
+  margin: 0 0 8px;
+  font: 600 16px/1.35 Sora, sans-serif;
+}
+
+.ebook-product-info p {
+  min-height: 3.2em;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.ebook-product .ebook-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  margin: 14px -16px -16px;
+  padding: 12px 16px;
+}
+
+.ebook-product .ebook-meta b {
+  align-self: flex-start;
+  font-size: 15px;
+}
+
+.ebook-product .ebook-meta .btn {
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 12px;
+  font-size: 11px;
+}
+
+.ebook-product .ebook-meta .magnetic {
+  display: block;
+  width: 100%;
+}
+
+.contact-methods {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.contact-methods a,
+.contact-confirmation a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.contact-methods a:hover,
+.contact-confirmation a:hover {
+  color: var(--bright);
+}
+
+.contact-methods .contact-email {
+  margin-top: 0;
+}
+
+.contact-confirmation {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.contact-confirmation p {
+  margin: 0 0 2px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .ebook-shelf {
+    grid-template-columns: 1fr;
+  }
+}

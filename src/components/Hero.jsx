@@ -1,0 +1,4 @@
+import { Camera, Code2, PenTool, Shirt } from 'lucide-react'
+import { images } from '../data/media.js'
+import { Btn, Eyebrow, Reveal } from '../ui/index.js'
+export function Hero() { const disciplines = [['TECH', Code2], ['DESIGN', PenTool], ['MEDIA', Camera], ['FASHION', Shirt]]; return <section className="wrap hero-grid" id="hero"><div><Eyebrow>CREATIVE TECHNOLOGY & MEDIA COMPANY</Eyebrow><h1>JEZZZARRR<br /><em>LABS</em></h1><p className="lead">Building ideas into digital experiences.</p><div className="discipline-row">{disciplines.map(([label, Icon]) => <div key={label}><Icon size={18} /><span>{label}</span></div>)}</div><div className="hero-actions"><Btn href="#contact">Start a Project</Btn><Btn href="#projects" variant="outline">Explore Our Work</Btn></div></div><Reveal className="hero-image"><img src={images.hero} alt="Creative workspace" /><span>JL</span><small>Better Ideas. Bigger Dreams.</small></Reveal></section> }

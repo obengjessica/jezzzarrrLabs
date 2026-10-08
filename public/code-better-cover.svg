@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Code Better</title>
+  <desc id="desc">A dark editorial ebook cover with golden code-inspired geometric artwork.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#252116"/>
+      <stop offset=".52" stop-color="#10100e"/>
+      <stop offset="1" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ffe49a"/>
+      <stop offset="1" stop-color="#d89614"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#f2b527" stroke-opacity=".12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="1000" fill="url(#background)"/>
+  <rect width="800" height="1000" fill="url(#grid)"/>
+  <path d="M0 610 800 310v690H0Z" fill="#090909" fill-opacity=".55"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="5" opacity=".9">
+    <path d="M155 390h130l65-65h105l65 65h125"/>
+    <path d="M155 490h75l50 50h245l50-50h70"/>
+    <path d="M230 390v100m390-100v100M350 325v-75m170 140v150"/>
+    <circle cx="155" cy="390" r="10" fill="#f2b527"/>
+    <circle cx="645" cy="390" r="10" fill="#f2b527"/>
+    <circle cx="155" cy="490" r="10" fill="#f2b527"/>
+    <circle cx="645" cy="490" r="10" fill="#f2b527"/>
+    <circle cx="350" cy="250" r="10" fill="#f2b527"/>
+    <circle cx="520" cy="640" r="10" fill="#f2b527"/>
+  </g>
+  <g fill="#f2b527" font-family="monospace" font-size="20" opacity=".72">
+    <text x="162" y="365">&lt;/&gt;</text>
+    <text x="565" y="465">{ }</text>
+    <text x="375" y="310">01 — 02</text>
+  </g>
+  <text x="76" y="112" fill="#f2b527" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">JEZZZARRR LABS / FIELD GUIDE 01</text>
+  <text x="76" y="720" fill="#f4f1e9" font-family="Arial, sans-serif" font-size="94" font-weight="700" letter-spacing="-5">CODE</text>
+  <text x="76" y="818" fill="url(#gold)" font-family="Arial, sans-serif" font-size="94" font-weight="700" letter-spacing="-5">BETTER.</text>
+  <text x="82" y="876" fill="#b6b1a4" font-family="Arial, sans-serif" font-size="23" letter-spacing="2">WRITE CLEARER. THINK DEEPER.</text>
+  <text x="82" y="914" fill="#b6b1a4" font-family="Arial, sans-serif" font-size="23" letter-spacing="2">BUILD WITH INTENTION.</text>
+  <path d="M76 950h648" stroke="#f2b527" stroke-opacity=".7"/>
+</svg>

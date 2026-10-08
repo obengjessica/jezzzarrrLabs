@@ -1,0 +1,5 @@
+import { ArrowRight } from 'lucide-react'
+import { useState } from 'react'
+import { projects } from '../data/projects.js'
+import { Eyebrow, Reveal } from '../ui/index.js'
+export function Projects({ onSelect }) { const [filter, setFilter] = useState('all'); const visible = filter === 'all' ? projects : projects.filter((project) => project.category === filter); return <section className="band" id="projects"><div className="wrap section"><Eyebrow>OUR WORK</Eyebrow><h2>Ideas in <em>action.</em></h2><div className="filters">{['all', 'tech', 'design', 'media', 'fashion'].map((item) => <button className={filter === item ? 'active' : ''} key={item} onClick={() => setFilter(item)}>{item}</button>)}</div><div className="project-grid">{visible.map((project, index) => <Reveal delay={index * 60} className="project-card" key={project.id}><img src={project.image} alt={project.title} /><div><small>{project.label}</small><h3>{project.title}</h3><p>{project.description}</p><button className="project-view" onClick={() => onSelect(project)}>View Project <ArrowRight size={13} /></button></div></Reveal>)}</div></div></section> }

@@ -1,0 +1,4 @@
+import { ArrowRight } from 'lucide-react'
+import { services } from '../data/services.js'
+import { Eyebrow, Reveal } from '../ui/index.js'
+export function Services() { return <section className="wrap section" id="services"><Reveal><Eyebrow>OUR SERVICES</Eyebrow><h2>Everything you need under <em>one lab.</em></h2></Reveal><div className="service-grid">{services.map((service, index) => <Reveal delay={index * 80} className="service-card" key={service.id}><div className="service-top"><b>{service.number} / {service.title.toUpperCase()}</b><service.icon size={20} /></div><h3>{service.title}</h3><p>{service.description}</p><ul>{service.items.map((item) => <li key={item}>{item}</li>)}</ul><a href={service.id === 'fashion' ? '#altfit' : '#contact'}>{service.id === 'fashion' ? 'Explore AltFit' : `Start a ${service.title} project`} <ArrowRight size={14} /></a></Reveal>)}</div></section> }

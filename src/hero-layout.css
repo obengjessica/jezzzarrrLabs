@@ -1,0 +1,9 @@
+.discipline-row > div {
+  align-items: center;
+  text-align: center;
+}
+
+.discipline-row svg {
+  display: block;
+  flex: 0 0 auto;
+}
